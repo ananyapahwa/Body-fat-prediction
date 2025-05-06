@@ -3,8 +3,8 @@ import streamlit as st
 from test import test  # Import the test function from test.py
 
 # Set the title and description of the app
-st.title("Fat Percentage Prediction")
-st.write("This application predicts the fat percentage of an individual based on their fitness data. Please provide the required inputs below.")
+st.title("Body Fat Percentage Prediction")
+st.write("Unlock your fitness insights — predict your body fat percentage in seconds with smart data!")
 
 # Create input fields for all the features
 age = st.number_input("Age", min_value=10, max_value=100, value=25)
