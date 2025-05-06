@@ -39,7 +39,7 @@ def test(age: int, gender: str, weight: float, height: float, max_bpm: int, avg_
         columns=X_test.columns,   # Preserve column names
         index=X_test.index        # Preserve index
     )
-    features_to_drop = ['Session_Duration (hours)', 'Workout_Frequency (days/week)']
+    features_to_drop = ['Calories_Burned', 'Workout_Frequency (days/week)', 'Weight (kg)']
     X_test = X_test.drop(columns=features_to_drop, axis=1)
 
     y_pred = model.predict(X_test)
